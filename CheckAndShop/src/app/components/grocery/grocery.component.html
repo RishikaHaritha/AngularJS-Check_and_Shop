@@ -1,0 +1,10 @@
+<div *ngIf="grocery">
+	<a [routerLink]= "['/groceries']">Go Back</a>
+	<br>
+	<h2 class = "page-header">{{grocery.$key}}</h2>
+	<ul class = "list-group" >
+		<li class= " list-group-item"> Price : {{grocery.price}}</li>
+		<li class= " list-group-item"> Review : {{grocery.review}}</li>
+		<a class="btn btn-default" [routerLink]= "['/update-grocery/'+grocery.$key]">Update</a>		
+	</ul>
+</div>

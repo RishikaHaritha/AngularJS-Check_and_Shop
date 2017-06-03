@@ -1,0 +1,7 @@
+<ul class = "list-group" >
+	<li class= " list-group-item" *ngFor ="let grocery of groceries">
+	
+	<a [routerLink]= "['/grocery/'+grocery.$key]">{{grocery.$key}}</a>
+	
+	</li>
+</ul>
